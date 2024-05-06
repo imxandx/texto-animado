@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 10%;
+    border: none;
+}
+
+.letter {
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.letter:hover {
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
